@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MediBuddy</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <style>
+    .main-header {
+      display: flex;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: #4CAF50; /* Header background color */
+      color: white;
+    }
+    .LOGO {
+      height: 50px; /* Adjust the height of the logo */
+      margin-right: 15px; /* Space between logo and text */
+    }
+    .item {
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <header class="main-header">
+    <img src="https://imgcdn.stablediffusionweb.com/2024/5/28/22e12eb9-71f0-4eb6-b37b-41e9e42bc0f4.jpg" alt="MediBuddy Logo" class="LOGO">
+    <h1 class="item">MEDIBUDDY</h1>
+  </header>
+  <div class = "f1">
+
+    <div class="container">
+      <div class="chat-box" id="chat-box">
+       <div class="chat-box-header">
+         <h2>CARE-MATE AI</h2>
+        </div>
+       <div class="chat-box-body" id="messages">
+         <div class="response">
+            <span>Hello there, how can I help you today?</span>
+          </div>
+        </div>
+        <div class="chat-box-footer">
+         <input type="text" id="messageInput" class="input-box" placeholder="Enter your symptoms...">
+          <button id="sendButton">Send</button>
+        </div>
+      </div>
+      <div class="quotes-section">
+        <h3>Daily Inspiration</h3>
+        <div class="quote-card">
+          <p>"Good health is not something we can buy. However, it can be an extremely valuable savings account." — Anne Wilson Schaef</p>
+        </div>
+        <div class="quote-card">
+          <p>"The greatest wealth is health." — Virgil</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="d-flex flex-column justify-content-center w-100 h-100">
+
+<div class="d-flex flex-column justify-content-center align-items-center">
+      <h1 class="fw-light text-white m-0">Powered By THE CODE CRAFTERS</h1>
+      <div class="btn-group my-5">
+        <a href="https://codepen-api-export-production.s3.us-west-2.amazonaws.com/zip/PEN/pyBNzX/1578778289271/pure-css-gradient-background-animation.zip" class="btn btn-outline-light" aria-current="page"><i class="fas fa-file-download me-2"></i> SOURCE CODE</a>
+        <a href="https://codepen.io/P1N2O/full/pyBNzX" class="btn btn-outline-light">FULL SCREEN <i class="fas fa-expand ms-2"></i></a>
+      </div>
+      
+    </div>
+  </div>
+</div>
+    <footer class="main-footer">
+      <p>&copy; 2024 MediBuddy. All rights reserved.</p> <!-- Copyright Notice -->
+  
+    </footer>
+
+    <script src="{{ url_for('static', filename='index.js') }}"></script>
+  </body>
+  </html>
